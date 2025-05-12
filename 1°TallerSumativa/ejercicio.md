@@ -27,7 +27,7 @@ donde θ refleja la compensación entre el riesgo y el retorno de la inversión,
 
 ## Resolución - Pseudocódigo
 
-Para resolver el problema de inversión mediante fuerza bruta en el intervalo \( x_1, x_2 \in [0, 5] \), se propone el siguiente pseudocódigo:
+Para resolver el problema de inversión mediante fuerza bruta en el intervalo (x₁, x₂ en el intervalo [0, 5] ), se propone el siguiente pseudocódigo:
 
 1. Leer valores de θ y Δx (con Δx = Δx₁ = Δx₂)
 2. Para x₁ desde 0 hasta 5 con paso Δx:
