@@ -29,16 +29,15 @@ donde θ refleja la compensación entre el riesgo y el retorno de la inversión,
 
 Para resolver el problema de inversión mediante fuerza bruta en el intervalo \( x_1, x_2 \in [0, 5] \), se propone el siguiente pseudocódigo:
 
-1. Leer valores de \( \theta \) y \( \Delta x \) (con \( \Delta x = \Delta x_1 = \Delta x_2 \))
-2. Para \( x_1 \) desde 0 hasta 5 con paso \( \Delta x \):
-   1. Para \( x_2 \) desde 0 hasta 5 con paso \( \Delta x \):
-      1. Si \( x_1 + x_2 \leq 5 \), calcular  
-         \[
-         f(x_1, x_2) = 1.20x_1 + 1.16x_2 - \theta \cdot (2x_1^2 + x_2^2 + (x_1 + x_2)^2)
-         \]  
-         y guardar la tupla \( \langle (x_1, x_2), f(x_1, x_2) \rangle \) en una lista
-3. Buscar en la lista la tupla con el mayor valor de \( f(x_1, x_2) \)
-4. Reportar la solución óptima \( \langle (x_1^*, x_2^*), f(x_1^*, x_2^*) \rangle \)
+1. Leer valores de θ y Δx (con Δx = Δx₁ = Δx₂)
+2. Para x₁ desde 0 hasta 5 con paso Δx:
+   1. Para x₂ desde 0 hasta 5 con paso Δx:
+      1. Si x₁ + x₂ ≤ 5, calcular  
+         f(x₁, x₂) = 1.20·x₁ + 1.16·x₂ − θ·(2·x₁² + x₂² + (x₁ + x₂)²)  
+         y guardar la tupla ⟨(x₁, x₂), f(x₁, x₂)⟩ en una lista
+3. Buscar en la lista la tupla con el mayor valor de f(x₁, x₂)
+4. Reportar la solución óptima ⟨(x₁*, x₂*), f(x₁*, x₂*)⟩
+
 
 Este enfoque evalúa todas las combinaciones posibles bajo las restricciones, asegurando la solución global mediante una búsqueda exhaustiva.
 
