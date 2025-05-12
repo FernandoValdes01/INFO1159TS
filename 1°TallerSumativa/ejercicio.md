@@ -36,7 +36,7 @@ Para resolver el problema de inversión mediante fuerza bruta en el intervalo (x
 1. Leer valores de θ y Δx (con Δx = Δx₁ = Δx₂)
 2. Para x₁ desde 0 hasta 5 con paso Δx:
    1. Para x₂ desde 0 hasta 5 con paso Δx:
-      1. Si x₁ + x₂ ≤ 5, calcular  
+      1. Si x₁ + x₂ ≤ 5000, calcular  
          f(x₁, x₂) = 1.20·x₁ + 1.16·x₂ − θ·(2·x₁² + x₂² + (x₁ + x₂)²)  
          y guardar la tupla ⟨(x₁, x₂), f(x₁, x₂)⟩ en una lista
 3. Buscar en la lista la tupla con el mayor valor de f(x₁, x₂)
