@@ -15,6 +15,10 @@ Un inversor tiene US$5000 para invertir en dos potenciales instrumentos financie
 
 De manera general, no se podrían satisfacer ambos objetivos de manera simultánea. No obstante el retorno de la inversión y el riesgo pueden ser combinados en una función objetivo, obteniendo el siguiente modelo:
 
+**Variables**
+x₁=Cantidad de dolares a invertir en accion 1
+x₂=Cantida de dolares a invertir en accion 2 
+
 **Maximizar**  
 f(x) = 1,20x₁ + 1,16x₂ − θ(2x₁² + x₂² + (x₁ + x₂)²)
 
