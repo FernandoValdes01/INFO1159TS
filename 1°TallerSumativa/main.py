@@ -1,4 +1,3 @@
-
 #--------------------------------------------------------------------------------------------------
 # Funcion principal
 def entradas():
@@ -18,16 +17,16 @@ def entradas():
 #--------------------------------------------------------------------------------------------------
 # Funcion de fuerza bruta
 # busca los valores suboptimos que cumplan la condicion 
-def fuerzabruta(theta, deltaX):
+def fuerzabruta(theta, deltaX, A=5000):
     lista = []
     x1 = 0.0
-    while x1 <= 5:
+    while x1 <= A:
         x2 = 0.0
-        while x2 <= 5:
-            if x2 + x1 <= 5:
+        while x2 <= A:
+            if x2 + x1 <= A:
                 # se evalua los valores de x1 y x2 con theta en la funcion 
                 # para que retorne un valor suboptimo
-                valor = funcionobjetivoevaluator(x1, x2, theta)
+                valor = objetivo(x1, x2, theta)
                 # guarda en una lista la tupla de x1-x2 y el valor suboptimo en ese punto
                 lista.append((x1, x2, valor))
             x2 += deltaX
@@ -35,8 +34,8 @@ def fuerzabruta(theta, deltaX):
     return lista
 #--------------------------------------------------------------------------------------------------
 # Funcion que evalua los valores ingresados en la funcion matematica
-def funcionobjetivoevaluator(x1, x2, theta):
-    return 1.20*x1 + 1.16*x2 - (theta * (2 * x1**2 + x2**2 + (x1 + x2)**2))
+def objetivo(x1, x2, theta):
+    return 1.20*x1 + 1.16*x2 - (theta * (2*x1**2 + x2**2 + (x1 + x2)**2))
 #--------------------------------------------------------------------------------------------------
 
 #Main(){
