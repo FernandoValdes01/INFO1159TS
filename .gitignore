@@ -1,0 +1,31 @@
+# Ignorar el entorno virtual
+mypython/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración o temporales de editores
+.vscode/
+.idea/
+*.swp
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de paquetes
+*.egg-info/
+dist/
+build/
+
+# Archivos de entorno
+.env
+.venv
